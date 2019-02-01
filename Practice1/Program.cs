@@ -24,7 +24,7 @@ class Program
     public static void Main()
     {
 
-        string s = "";
+        
 
         rectangle R1 = new rectangle(67, 86);
        int Area1= R1.AreaOfRectangle();
