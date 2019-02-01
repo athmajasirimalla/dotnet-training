@@ -3,7 +3,55 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
-class rectangle
+//Inheritence Example//
+class Employee  
+{
+    string FirstName;
+    string LastName;
+    string MailId;
+    public void PrintFullDetails()
+    {
+        Console.WriteLine();
+        Console.WriteLine(FirstName + " " + LastName);
+        Console.WriteLine();
+        Console.WriteLine(MailId);
+  
+    }
+    public class FullTimeEmployee : Employee
+    {
+        public float YearlySalary;
+
+    }
+    public class PartTimeEmployee : Employee
+    {
+        public float HourlyRate;
+    }
+    class Program
+    {
+        public static void Main()
+        {
+            FullTimeEmployee FTE = new FullTimeEmployee();
+            FTE.FirstName = ("LOGIQINT");
+            FTE.LastName = ("TECHNOLOGY");
+            FTE.MailId = ("logiqintservices@gmail.com");
+            FTE.YearlySalary = 180000;
+            Console.WriteLine();
+            PartTimeEmployee PTE = new PartTimeEmployee();
+
+
+            PTE.FirstName = ("SERVICES");
+            PTE.LastName = ("LIMITED");
+            PTE.MailId = ("serviceslimited@gmail.com");
+            PTE.HourlyRate = 200000;
+            FTE.PrintFullDetails();
+            PTE.PrintFullDetails();
+
+        }
+
+    }
+} //Inheritence Example//
+
+/*class rectangle
 {
     int length;
     int breadth;
@@ -101,79 +149,79 @@ public static void Calculate(int a, int b,out int Sum, out int Product)
     Sum = a + b;
     Product = a * b;
 }*/
-    /* Program.OddNumbers(30);
+/* Program.OddNumbers(30);
 
-         Program p = new Program();
-    int sub = p.Sub(900, 100);
- }
- public int Sub(int Fn,int Sn)
- {
-     return Fn-Sn ; 
- }
+     Program p = new Program();
+int sub = p.Sub(900, 100);
+}
+public int Sub(int Fn,int Sn)
+{
+ return Fn-Sn ; 
+}
 /* public static void OddNumbers(int Target)
+{
+ int start = 1;
+ while (start <= Target)
  {
-     int start = 1;
-     while (start <= Target)
-     {
-         Console.WriteLine(start);
-         start = start +2 ;
-     }
+     Console.WriteLine(start);
+     start = start +2 ;
+ }
 
+}*/
+
+
+/* for(int i=0;i<=50;i++)
+ {
+
+     if (i % 2 == 1)
+         continue;
+     if (i == 30)
+         break;
+     Console.WriteLine(i);
+
+ }
+ /*int[] Numbers = new int[5];
+ Numbers[0] = 100;
+ Numbers[1] = 101;
+ Numbers[2] = 102;
+ Numbers[3] = 103;
+ Numbers[4] = 104;
+/* foreach(int k in Numbers)
+ {
+     Console.WriteLine(k);
  }*/
 
+/* for (int j = 0; j <Numbers.Length;j++)
+ {
+     Console.WriteLine(Numbers[j]);
+ }*/
 
-           /* for(int i=0;i<=50;i++)
-            {
-                
-                if (i % 2 == 1)
-                    continue;
-                if (i == 30)
-                    break;
-                Console.WriteLine(i);
+/*int[] Numbers = new int[5];
+Numbers[0] = 100;
+Numbers[1] = 101;
+Numbers[2] = 102;
+Numbers[3] = 103;
+Numbers[4] = 104;
+int i = 0;
+while (i < Numbers.Length)
+{
+    Console.WriteLine(Numbers[i]);
+    i++;
 
-            }
-            /*int[] Numbers = new int[5];
-            Numbers[0] = 100;
-            Numbers[1] = 101;
-            Numbers[2] = 102;
-            Numbers[3] = 103;
-            Numbers[4] = 104;
-           /* foreach(int k in Numbers)
-            {
-                Console.WriteLine(k);
-            }*/
-
-           /* for (int j = 0; j <Numbers.Length;j++)
-            {
-                Console.WriteLine(Numbers[j]);
-            }*/
-
-            /*int[] Numbers = new int[5];
-            Numbers[0] = 100;
-            Numbers[1] = 101;
-            Numbers[2] = 102;
-            Numbers[3] = 103;
-            Numbers[4] = 104;
-            int i = 0;
-            while (i < Numbers.Length)
-            {
-                Console.WriteLine(Numbers[i]);
-                i++;
-            
-            }*/
+}*/
 
 
-        
-                    
-                
-
-            
-         
-
-            
-            
 
 
-        
-    
+
+
+
+
+
+
+
+
+
+
+
 
