@@ -4,7 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 //Inheritence Example//
-/*class Employee  
+class Employee
 {
     string FirstName;
     string LastName;
@@ -16,8 +16,9 @@ using System.Threading.Tasks;
         Console.WriteLine(FirstName + " " + LastName);
         Console.WriteLine();
         Console.WriteLine(MailId);
+        Console.WriteLine();
 
-  
+
     }
     public class FullTimeEmployee : Employee
     {
@@ -26,21 +27,20 @@ using System.Threading.Tasks;
     }
     public class PartTimeEmployee : Employee
     {
+        public new void PrintFullDetails()
+        {
+
+            Console.WriteLine(FirstName + " " + LastName + "- Contractor");
+            Console.WriteLine();
+            Console.WriteLine(MailId);
+        }
         public float HourlyRate;
-    }
-    public class A : PartTimeEmployee
-    {
-
-    }
-    public class B:FullTimeEmployee
-    {
-
-    }
+    
+}
     class Program
     {
         public static void Main()
         {
-            B B1 = new B();
             FullTimeEmployee FTE = new FullTimeEmployee();
             FTE.FirstName = ("LOGIQINT");
             FTE.LastName = ("TECHNOLOGY");
@@ -60,8 +60,8 @@ using System.Threading.Tasks;
         }
 
     }
-} */
-public class ParentClass
+} 
+/*public class ParentClass
 {
     public ParentClass()
     {
@@ -83,7 +83,7 @@ public class ParentClass
             
         }
     }
-}
+}*/
 
 //Inheritence Example//
 
