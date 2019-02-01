@@ -9,12 +9,14 @@ class Employee
     string FirstName;
     string LastName;
     string MailId;
+
     public void PrintFullDetails()
     {
         Console.WriteLine();
         Console.WriteLine(FirstName + " " + LastName);
         Console.WriteLine();
         Console.WriteLine(MailId);
+
   
     }
     public class FullTimeEmployee : Employee
@@ -26,10 +28,19 @@ class Employee
     {
         public float HourlyRate;
     }
+    public class A : PartTimeEmployee
+    {
+
+    }
+    public class B:FullTimeEmployee
+    {
+
+    }
     class Program
     {
         public static void Main()
         {
+            B B1 = new B();
             FullTimeEmployee FTE = new FullTimeEmployee();
             FTE.FirstName = ("LOGIQINT");
             FTE.LastName = ("TECHNOLOGY");
