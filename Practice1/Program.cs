@@ -4,7 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 //Inheritence Example//
-class Employee  
+/*class Employee  
 {
     string FirstName;
     string LastName;
@@ -60,7 +60,32 @@ class Employee
         }
 
     }
-} //Inheritence Example//
+} */
+public class ParentClass
+{
+    public ParentClass()
+    {
+        Console.WriteLine("parentclass constructor called");
+    }
+    public ParentClass(string Message)
+    {
+        Console.WriteLine(Message);
+    }
+    public class ChildClass : ParentClass
+    {
+        public ChildClass() //: base("derived class controlling parentclass")
+        {
+            Console.WriteLine("childclass constructor called");
+        }
+        public static void Main()
+        {
+            ChildClass CC = new ChildClass();
+            
+        }
+    }
+}
+
+//Inheritence Example//
 
 /*class rectangle
 {
