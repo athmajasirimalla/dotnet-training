@@ -35,7 +35,7 @@ class Program
 
     }
 }
-/*class customer
+class customer
 {
     string firstName;
     string lastname;
@@ -65,8 +65,8 @@ class Program
     {
         customer C1 = new customer("athmaja", "sirimalla", "@gmail.com");
         C1.PrintMailId();
-      //  customer C2 = new customer();
-     //   C2.PrintMailId();
+        customer C2 = new customer();
+        C2.PrintMailId();
     }
     }
 
