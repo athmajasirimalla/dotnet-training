@@ -8,7 +8,62 @@ namespace Practice2
 
 
 {
-    public class Employee
+    public class Pets
+    {
+        //class Variables
+
+        public static int count = 0;
+        public string Name;
+        public int Age;
+        public float Happiness;
+        //class Constructors
+
+        public Pets()
+        {
+            Name = "Reo";
+            Age = 2;
+            Happiness = 0.4f;
+            count++;
+        }
+        public Pets(string _Name,int _Age,float _Happiness)
+        {
+            Name = _Name;
+            Age = _Age;
+            Happiness = _Happiness;
+            count++;
+        }
+        //class Method
+
+        public void print()
+        {
+ 
+       
+            Console.WriteLine("Name-"+Name);
+            Console.WriteLine("Age-" + Age);
+            Console.WriteLine("Happiness-" + Happiness);
+            Console.WriteLine();
+        }
+        //Main Method
+
+        public static void Main()
+        {
+            Pets Dog = new Pets();
+            Console.WriteLine("Dog");
+            Console.WriteLine("---");
+            Console.Write();
+            Dog.print();
+            Pets cat = new Pets("Spotty",3,0.7f);
+             Console.WriteLine("Cat");
+            Console.WriteLine("----");
+            Console.WriteLine();
+            cat.print();
+
+            Console.WriteLine();
+            Console.WriteLine("Number of Animals-" + count);
+        }
+    }
+}
+   /* public class Employee
 
     {
         public string FirstName = "ABCD";
