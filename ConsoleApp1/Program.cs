@@ -33,7 +33,7 @@ namespace Practice2
         }
     }
 }
-   /* public class Pets
+    public class Pets
     {
         //class Variables
 
@@ -87,8 +87,8 @@ namespace Practice2
             Console.WriteLine("Number of Animals-" + count);
         }
     }
-}*/
-   /* public class Employee
+}
+    public class Employee
 
     {
         public string FirstName = "ABCD";
@@ -140,11 +140,11 @@ namespace Practice2
     }
 }
 
-            
+         //string   
 
-       /* public static void Main()
+        public static void Main()
         {
             Console.WriteLine("Hello");
         }
-    }*/
+    }
 
