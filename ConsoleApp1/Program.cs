@@ -8,7 +8,32 @@ namespace Practice2
 
 
 {
-    public class Pets
+    public class BaseClass
+    {
+        public virtual void print()
+        {
+            Console.WriteLine("This is a Baseclass method");
+        }
+
+    }
+    public class DerivedClass : BaseClass
+    {
+        public override void print()
+        {
+            Console.WriteLine("This is a DerivedClass method");
+        }
+    }
+    class program
+    {
+        public static void Main()
+        {
+            BaseClass B = new DerivedClass();
+            B.print();
+
+        }
+    }
+}
+   /* public class Pets
     {
         //class Variables
 
@@ -62,7 +87,7 @@ namespace Practice2
             Console.WriteLine("Number of Animals-" + count);
         }
     }
-}
+}*/
    /* public class Employee
 
     {
