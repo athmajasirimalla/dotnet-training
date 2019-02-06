@@ -8,7 +8,70 @@ namespace Practice2
 
 
 {
-    public class BaseClass
+    //Getter and Setter Method
+    public class Student
+    {
+        private int _id;
+        private string _name;
+        private int _passmarks=35;
+        public int GetPassMarks()
+        {
+            return this._passmarks;
+        }
+
+        public void SetId(int Id)
+        {
+            if (Id <= 0)
+            {
+                throw new Exception("Student Id cannot be nagative");
+
+            }
+            this._id = Id;
+
+        }
+        public int GetId()
+        {
+            return this._id;
+
+        }
+        public void SetName(string Name)
+        {
+            if (string.IsNullOrEmpty(Name))
+            {
+                throw new Exception("Name cannot be Null or Empty");
+
+            }
+            this._name = Name;
+        }
+
+        public string GetName()
+        {
+            if (string.IsNullOrEmpty(this._name))
+            {
+                return "No Name";
+            }
+            else
+            {
+                return this._name;
+            }
+        }
+        public class program
+        {
+            public static void Main()
+            {
+                Student C1 = new Student();
+                C1.SetId(100);
+                C1.SetName("Scott");
+                C1.GetPassMarks();
+                Console.WriteLine("Student Id = {0}", C1.GetId());
+                Console.WriteLine("Student Name = {0}", C1.GetName());
+                Console.WriteLine("PassMarks = {0}", C1.GetPassMarks());
+
+            }
+        }
+    }
+}
+/* public class BaseClass
     {
         public virtual void print()
         {
@@ -138,13 +201,13 @@ namespace Practice2
 
         }
     }
-}
+}*/
 
          //string   
 
-        public static void Main()
+       /* public static void Main()
         {
             Console.WriteLine("Hello");
         }
-    }
+    }*/
 
